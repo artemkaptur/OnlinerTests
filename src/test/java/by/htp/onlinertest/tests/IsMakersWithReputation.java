@@ -24,7 +24,7 @@ public class IsMakersWithReputation {
 		steps.initBrowser();
 	}
 
-	@Test(description = "Check is software makers in Minsk with reputation or not")
+	@Test(groups = { "3" }, description = "Check is software makers in Minsk with reputation or not")
 	public void isMakersWithReputation() throws InterruptedException {
 		assertTrue(steps.getSoftwareMakersWithRep().size() != 0,
 				"No software makers from Minsk with reputation in search result");

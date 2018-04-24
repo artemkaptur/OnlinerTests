@@ -24,7 +24,7 @@ public class IsSoftwareMakersTest {
 		steps.initBrowser();
 	}
 
-	@Test(description = "Check is software makers in Minsk or not")
+	@Test(groups = { "2" }, description = "Check is software makers in Minsk or not")
 	public void isSoftwareMakersTest() throws InterruptedException {
 		assertTrue(steps.getSoftwareMakers().size() != 0, "No software makers from Minsk in search result");
 	}

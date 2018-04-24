@@ -24,8 +24,8 @@ public class IsMinskMakersTest {
 		steps.initBrowser();
 	}
 
-	@Test(description = "Check is makers in Minsk or not")
-	public void isMakersinMinskTest() {
+	@Test(groups = { "1" }, description = "Check is makers in Minsk or not")
+	public void isMakersinMinskTest() throws InterruptedException {
 		assertTrue(steps.getMakersFromMinsk().size() != 0, "No makers from Minsk in search result");
 	}
 

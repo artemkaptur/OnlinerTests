@@ -23,7 +23,8 @@ public class MainPage extends AbstractPage {
 		PageFactory.initElements(this.driver, this);
 	}
 
-	public void clickOnMakers() {
+	public void clickOnMakers() throws InterruptedException {
+		Thread.sleep(3000);
 		makers.click();
 	}
 

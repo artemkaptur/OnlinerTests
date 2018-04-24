@@ -5,11 +5,16 @@
 
 	<test name="OnlinerTest">
 
-		<classes>
-			<class name="by.htp.onlinertest.tests.IsMinskMakersTest" />
-			<class name="by.htp.onlinertest.tests.IsSoftwareMakersTest" />
-			<class name="by.htp.onlinertest.tests.IsMakersWithReputation" />
-		</classes>
+		<groups>
+			<dependencies>
+				<group name="2" depends-on="1" />
+				<group name="3" depends-on="2" />
+			</dependencies>
+		</groups>
+
+		<packages>
+			<package name="by.htp.onlinertest.tests"></package>
+		</packages>
 
 	</test>
 

@@ -31,7 +31,7 @@ public class Steps {
 		DriverSingleton.closeDriver();
 	}
 
-	private void searchMakersFromMinsk() {
+	private void searchMakersFromMinsk() throws InterruptedException {
 		MainPage mainPage = new MainPage(driver);
 		mainPage.openPage();
 		mainPage.clickOnMakers();
@@ -39,7 +39,7 @@ public class Steps {
 		makersPage.clickOnFromMinskCheckBox();
 	}
 
-	public List<WebElement> getMakersFromMinsk() {
+	public List<WebElement> getMakersFromMinsk() throws InterruptedException {
 		searchMakersFromMinsk();
 		logger.info("Start searching makers from Minsk");
 		MakersPage makersPage = new MakersPage(driver);
